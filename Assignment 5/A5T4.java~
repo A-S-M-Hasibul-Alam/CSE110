@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class A5T4{
+  public static void main (String[] args){
+    Scanner sc=new Scanner(System.in);
+    int [] marks = new int[]{10,30,20,50,40};
+    int max=marks[0];
+    int LargestLocation=0;
+    for(int i=1;i<=4;i++){
+      if(marks[i]>max){
+        max=marks[i];
+        LargestLocation=i;
+      }
+    }
+    int backup=marks[0];
+    marks[0]=max;
+    marks[LargestLocation]=backup;
+    for(int i =0;i<marks.length;i++){
+      System.out.print(marks[i]+", ");
+    }
+  }
+}

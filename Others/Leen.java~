@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Leen{
+  public static void main (String agrs[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the quantity of clothes");
+    int L = sc.nextInt();
+    System.out.println("Enter the quantity of lipstick");
+    int E = sc.nextInt();
+    System.out.println("Enter the quantity of makeup kit");
+    int N = sc.nextInt();
+    System.out.println("Enter the quantity of daimond ring");
+    int r = sc.nextInt();
+    int o = L*50000;
+    int c = E*5000;
+    int k = N*15000;
+    int y = r*7000000000000000000000000000000;
+    System.out.println("Leen's husband's fine is: "+(o+c+k+y));
+  }
+}

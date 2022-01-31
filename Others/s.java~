@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class s{
+  public static void main(String args[]){
+    Scanner scn = new Scanner(System.in);
+    System.out.println("Enter a number");
+    int a = scn.nextInt();
+    System.out.println("Enter another number");
+    int b = scn.nextInt();
+    int max=b; int min=b; int sum=b;
+    for(int c=1; c<=a-1; c++){
+      System.out.println("Enter a number");
+      int d = scn.nextInt();
+      if(b>d){
+        min=d;
+      }
+      if(d>b){
+        max=d;
+      }
+      sum = sum+b;
+    }
+    System.out.println(max);
+    System.out.println(min);
+    int avg = sum/a;
+    System.out.println(avg);
+  }
+}
+        

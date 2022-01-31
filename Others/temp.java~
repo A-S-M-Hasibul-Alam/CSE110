@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class temp{
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a number");
+    int n = sc.nextInt();int var = n;
+    for(int a=1; a<=n; a++){
+      for(int b=n-a; b>=0; b--){
+        System.out.print(" ");
+      }
+      for(int c=var; c<=a; c++){
+        System.out.print(c);
+        var--;
+      }
+      System.out.println();
+    }
+  }
+}

@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class t{
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a number");
+    int a = sc.nextInt();
+    for(int count=1; count<=a; count++){
+      int space;
+      for(int space=a-count; space<=1; space--){
+        System.out.prin(" ");
+      }
+      for(int num=space; num<=1; num++){
+        System.out.print(num);
+      }
+      System.out.println();
+    }
+  }
+}

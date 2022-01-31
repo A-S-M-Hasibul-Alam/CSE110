@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Rafis_wife{
+  public static void main (String agrs[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the quantity of clothes");
+    int L = sc.nextInt();
+    System.out.println("Enter the quantity of lipstick");
+    int E = sc.nextInt();
+    System.out.println("Enter the quantity of makeup kit");
+    int N = sc.nextInt();
+    System.out.println("Enter the quantity of daimond ring");
+    int r = sc.nextInt();
+    int o = L*5000;
+    int c = E*999;
+    int k = N*9000;
+    int y = r*700000;
+    System.out.println("Total amount of clothes: "+o+"$ only");
+    System.out.println("Total amount of lipstricks: "+c+"$ ektu besi");
+    System.out.println("Total amount of makeup kits: "+k+"$ ar aktu besi");
+    System.out.println("Total amount of daimond rings "+y+"$ o baba go");
+    System.out.println("Leen's husband's fine is: "+(o+c+k+y+ "$ your hubby will be die."));
+  }
+}

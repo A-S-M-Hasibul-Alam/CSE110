@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class b{
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter array length");
+    int n = sc.nextInt();
+    int a[] = new int[n];
+    for(int i=0; i<=a.length-1; i++){
+      a[i] = sc.nextInt();
+    }
+    for(int j=0; j<=a.length-1; j++){
+      int minl = j;
+      for(int k=j+1; k<=a.length-1; k++){
+        if(a[k]<a[minl]){
+          minl = k;
+        }
+        int temp = a[j];
+        a[j] = a[k];
+        a[k] = temp;
+      }
+    }
+    if(a.length%2==1){
+      med = a.length/2;
+      System.out.println(a[med]);
+    }
+    else{
+      med = ((a.length/2)+(a.length/2-1))2;
+      System.out.println(a[med]);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class rm{
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a number");
+    int n = sc.nextInt();
+    int rem=0; int num=n;
+    while(num>0){
+      num = num/10;
+      rem++;
+    }
+    int prod=1; 
+    int count=1;
+    while(count<rem){
+      prod = prod*10;
+      count++;
+    }
+    while(n>0){
+      a = n/prod;
+      System.out.println(a);
+      n = n%prod;
+      prod = prod/10;
+    }
+  }
+}
+    

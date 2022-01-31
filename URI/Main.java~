@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main{
+  public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    string a = sc.nextLine();
+    double b = sc.nextDouble();
+    double c = sc.nextDouble();
+    double d = c*(15/100);
+    double e = b+d;
+    System.out.printf("Total = R$"+".%2f",e);
+  }
+}
+ 
